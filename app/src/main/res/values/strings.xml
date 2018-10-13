@@ -4,4 +4,15 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="image">Image</string>
 
+    <string name="museum">Museum</string>
+    <string name="restaurant">Restaurant</string>
+    <string name="relaxation">Relaxation</string>
+    <string name="mall">Mall</string>
+    <string name="link">https://www.google.com/maps/search/?api=1&amp;query=</string>
+    <string name="symbol">\p{Z}</string>
+    <string name="plus">+</string>
+
+
+
+
 </resources>

@@ -31,10 +31,10 @@ public class RelaxationFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.fragment_relaxation, container, false);
+        View rootView = inflater.inflate(R.layout.fragment_layout, container, false);
         context = rootView.getContext();
         library = new Library();
-        listView = rootView.findViewById(R.id.relaxation_list_view);
+        listView = rootView.findViewById(R.id.layout_list_view);
 
         locationPopulation();
         return rootView;
@@ -44,7 +44,7 @@ public class RelaxationFragment extends Fragment {
 
         ArrayList<Library.Location> locations = new ArrayList<>();
         for (Library.Location item : library.getLocations()) {
-            if(item.getType().equals("Relaxation"))
+            if(item.getType().equals(getString(R.string.relaxation)))
             {
                 locations.add(item);
             }
@@ -55,7 +55,7 @@ public class RelaxationFragment extends Fragment {
             public void onClick(View view) {
                 Library.Location location = (Library.Location) view.getTag();
                 String uriLocation = location.getTitle() + ", " + location.getLocation();
-                Uri uri = Uri.parse("https://www.google.com/maps/search/?api=1&query=" + uriLocation.replaceAll("\\p{Z}","+"));
+                Uri uri = Uri.parse(getString(R.string.link) + uriLocation.replaceAll(getString(R.string.symbol),getString(R.string.plus)));
                 Intent intent = new Intent(Intent.ACTION_VIEW);
                 intent.setData(uri);
                 if (intent.resolveActivity(getActivity().getPackageManager()) != null) {

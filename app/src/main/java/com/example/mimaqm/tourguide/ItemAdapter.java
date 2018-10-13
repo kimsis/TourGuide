@@ -14,15 +14,11 @@ import java.util.ArrayList;
 
 public class ItemAdapter extends ArrayAdapter<Library.Location> {
 
-    View.OnClickListener mLocationOnClickListener;
-    //View.OnClickListener mInfoOnClickListener;
-    //This is commented out because I would like to add a few more features in this app at a later date and I don't want to forget about it
+    private View.OnClickListener mLocationOnClickListener;
 
     public ItemAdapter(Context context, ArrayList<Library.Location> tourItemArrayList, View.OnClickListener locationOnClickListener) {
         super(context, 0, tourItemArrayList);
         this.mLocationOnClickListener = locationOnClickListener;
-        //this.mInfoOnClickListener = infoOnClickListener;
-        //This is commented out because I would like to add a few more features in this app at a later date and I don't want to forget about it
     }
 
     @NonNull
@@ -43,9 +39,6 @@ public class ItemAdapter extends ArrayAdapter<Library.Location> {
         viewHolder.image.setImageResource(locationForDisplay.getImageResource());
         viewHolder.title.setText(locationForDisplay.getTitle());
         viewHolder.description.setText(locationForDisplay.getDescription());
-        //viewHolder.description.setOnClickListener(mInfoOnClickListener);
-        //viewHolder.description.setTag(locationForDisplay);
-        //This is commented out because I would like to add a few more features in this app at a later date and I don't want to forget about it
         viewHolder.location.setTag(locationForDisplay);
         viewHolder.location.setText(locationForDisplay.getLocation());
         viewHolder.location.setOnClickListener(mLocationOnClickListener);

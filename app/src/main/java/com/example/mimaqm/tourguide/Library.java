@@ -29,7 +29,7 @@ public class Library {
     }
 
     private ArrayList<Location> makeLocations(){
-        ArrayList<Location> locations = new ArrayList<Location>();
+        ArrayList<Location> locations = new ArrayList<>();
 
         locations.add(new Location("Museum","VDMA gedbouw", "A museum in Eindhoven, whose purpose I am not sure about, yet", "Vestdijk 31T, 5611 CA Eindhoven"));
         locations.add(new Location("Museum","The Philips Museum", "Museum on company's history and products", "Emmasingel 31, 5611 AZ Eindhoven", R.drawable.museum_philips));
@@ -54,7 +54,7 @@ public class Library {
         return locations;
     }
 
-    public class Location {
+    public class Location{
 
         private String mType;
         private String mTitle;
@@ -96,7 +96,5 @@ public class Library {
         public int getImageResource() {
             return mImageResource;
         }
-
-        ;
     }
 }

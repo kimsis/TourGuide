@@ -3,12 +3,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RelaxationFragment">
-
-    <!-- TODO: Update blank fragment layout -->
+    tools:context=".MallsFragment">
     <ListView
-        android:id="@+id/relaxation_list_view"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"/>
+        android:id="@+id/layout_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
 
 </FrameLayout>
