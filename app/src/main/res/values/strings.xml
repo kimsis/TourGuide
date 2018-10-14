@@ -7,8 +7,72 @@
     <string name="relaxation">Relaxation</string>
     <string name="mall">Mall</string>
     <string name="link">https://www.google.com/maps/search/?api=1&amp;query=</string>
-    <string name="symbol">\p{Z}</string>
+    <string name="symbol">\\\\p{Z}</string>
     <string name="plus">+</string>
+
+    <string name="vdma_title">VDMA gedbouw</string>
+    <string name="vdma_description">A museum in Eindhoven, whose purpose I am not sure about, yet</string>
+    <string name="vdma_location">Vestdijk 31T, 5611 CA Eindhovenw</string>
+
+    <string name="philips_title">The Philips Museum</string>
+    <string name="philips_description">Museum on company\'s history and products</string>
+    <string name="philips_location">Emmasingel 31, 5611 AZ Eindhoven</string>
+
+    <string name="vam_title">Van Abbe Museum</string>
+    <string name="vam_description">Museum with Contemporary and experimental art, installations &amp; photo</string>
+    <string name="vam_location">Bilderdijklaan 10, 5611 NH Eindhoven</string>
+
+    <string name="psv_title">The PSV Museum</string>
+    <string name="psv_description">Museum of the PSV Eindhoven home ground</string>
+    <string name="psv_location">Stadionplein 4, 5616 RX Eindhoven</string>
+
+    <string name="berlage_title">Berlage Kitchen And Bar</string>
+    <string name="berlage_description">A nice and cosy restaurant</string>
+    <string name="berlage_location">Stadionplein 4, 5616 RX Eindhoven</string>
+
+    <string name="wiesen_title">Restaurant Wiesen</string>
+    <string name="wiesen_description">A nice restaurant near the center</string>
+    <string name="wiesen_location">Kleine Berg 10, 5611 JV Eindhoven</string>
+
+    <string name="lithos_title">Lithos Grieks Specialiteiten Restaurant</string>
+    <string name="lithos_description">A nice greek restaurant near the cnter</string>
+    <string name="lithos_location">Kerkstraat 40, 5611 GK Eindhoven</string>
+
+    <string name="zarzo_title">Zarzo</string>
+    <string name="zarzo_description">A cosy restaurant near the center</string>
+    <string name="zarzo_location">Bleekweg 7, 5611 EZ Eindhoven</string>
+
+    <string name="nada_title">Nada Thaise massage</string>
+    <string name="nada_description">Thai Massage Therapist</string>
+    <string name="nada_location">Grote Berg85 5611 KJ Eindhoven</string>
+
+    <string name="hilversum_title">Hilversum massage</string>
+    <string name="hilversum_description">Relaxation massage and sports massage</string>
+    <string name="hilversum_location">Mozartlaan 25, 1217 CM Hilversum</string>
+
+    <string name="glamour_title">Glamour Studio</string>
+    <string name="glamour_description">Hair Salon</string>
+    <string name="glamour_location">Grote Berg 31, 5611 KH Eindhoven</string>
+
+    <string name="aqua_title">Agua - Spa, Health &amp; Beauty</string>
+    <string name="aqua_description">Spa and Health Club</string>
+    <string name="aqua_location">Wilhelminaplein 17, 5611 HG Eindoven</string>
+
+    <string name="piazza_title">Piazza</string>
+    <string name="piazza_description">The Piazza shopping mall in the centre of Eindhoven</string>
+    <string name="piazza_location">5611 AE Eindhoven</string>
+
+    <string name="admirant_title">Admirant Shopping</string>
+    <string name="admirant_description">The Admirant shopping mall in the centre of Eindhoven</string>
+    <string name="admirant_location">Nieuwe Emmasingel 54, 5611 AM Eindhoven</string>
+
+    <string name="heuvel_title">Heuvel Eindhoven Mall</string>
+    <string name="heuvel_description">The Heuvel Eindhoven shopping mall in the centre of Eindhoven</string>
+    <string name="heuvel_location">Heuvel Galerie 241, 5611 DK Eindhoven</string>
+
+    <string name="parkhaus_title">Eindhoven Parkhaus</string>
+    <string name="parkhaus_description">The Eindhoven Parkhaus shopping mall in the centre of Eindhoven</string>
+    <string name="parkhaus_location">31153, AZ, Emmasingel, 5611 AM Eindhoven</string>
 
     <string-array name="array_of_tabs">
         <item>Museumms</item>

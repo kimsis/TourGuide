@@ -1,12 +1,16 @@
 package com.example.mimaqm.tourguide;
 
+import android.content.Context;
+import android.content.res.Resources;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
 public class ViewPagerFragmentAdapter extends FragmentPagerAdapter {
-    private String tabTitles[] = new String[]{"Museums", "Restaurants", "Relaxations", "Malls"};
+
+    Resources r = App.getContext().getResources();
+    String tabTitles[] = r.getStringArray(R.array.array_of_tabs);
 
     public ViewPagerFragmentAdapter(FragmentManager fm)
     {

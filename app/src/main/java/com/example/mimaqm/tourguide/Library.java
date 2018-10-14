@@ -1,6 +1,6 @@
 package com.example.mimaqm.tourguide;
 
-import android.content.Context;
+import android.content.res.Resources;
 
 import java.util.ArrayList;
 
@@ -8,54 +8,49 @@ public class Library {
 
     private ArrayList<Location> locations;
 
-    public Library(){
+    public Library() {
         this.locations = makeLocations();
     }
 
-
-    public Location getSpecificLocation(String title){
-        Location location = null;
-        for (int i = 0; i < locations.size(); i++)
-        {
-            if(locations.get(i).getTitle().equals(title)){
-                location = locations.get(i);
-                break;
-            }
-        }
-        return location;
-    }
-
-    public ArrayList<Location> getLocations(){
+    public ArrayList<Location> getLocations() {
         return locations;
     }
 
-    private ArrayList<Location> makeLocations(){
+    private ArrayList<Location> makeLocations() {
         ArrayList<Location> locations = new ArrayList<>();
+        Resources r = App.getContext().getResources();
+        String type = r.getString(R.string.museum);
 
-        locations.add(new Location("Museum","VDMA gedbouw", "A museum in Eindhoven, whose purpose I am not sure about, yet", "Vestdijk 31T, 5611 CA Eindhoven"));
-        locations.add(new Location("Museum","The Philips Museum", "Museum on company's history and products", "Emmasingel 31, 5611 AZ Eindhoven", R.drawable.museum_philips));
-        locations.add(new Location("Museum","Van Abbe Museum", "Museum with Contemporary and experimental art, installations & photo", "Bilderdijklaan 10, 5611 NH Eindhoven"));
-        locations.add(new Location("Museum","The PSV Museum", "Museum of the PSV Eindhoven home ground", "Stadionplein 4, 5616 RX Eindhoven", R.drawable.museum_psv));
+        locations.add(new Location(type, r.getString(R.string.vdma_title), r.getString(R.string.vdma_description), r.getString(R.string.vdma_location)));
+        locations.add(new Location(type, r.getString(R.string.philips_title), r.getString(R.string.philips_description), r.getString(R.string.philips_location), R.drawable.museum_philips));
+        locations.add(new Location(type, r.getString(R.string.vam_title), r.getString(R.string.vam_description), r.getString(R.string.vam_location)));
+        locations.add(new Location(type, r.getString(R.string.psv_title), r.getString(R.string.psv_description), r.getString(R.string.psv_location), R.drawable.museum_psv));
 
-        locations.add(new Location("Restaurant", "Berlage Kitchen And Bar", "A nice and cosy restaurant", "Kleine Berg 16, 5611 JV Eindhoven", R.drawable.restaurant_berlage));
-        locations.add(new Location("Restaurant", "Restaurant Wiesen", "A nice restaurant near the center", "Kleine Berg 10, 5611 JV Eindhoven"));
-        locations.add(new Location("Restaurant", "Lithos Grieks Specialiteiten Restaurant", "A nice greek restaurant near the cnter", "Kerkstraat 40, 5611 GK Eindhoven", R.drawable.restaurant_lithos));
-        locations.add(new Location("Restaurant", "Zarzo", "A cosy restaurant near the center", "Bleekweg 7, 5611 EZ Eindhoven"));
+        type = r.getString(R.string.restaurant);
 
-        locations.add(new Location("Relaxation", "Nada Thaise massage", "Thai Massage Therapist", "Grote Berg85 5611 KJ Eindhoven"));
-        locations.add(new Location("Relaxation", "Hilversum massage", "Relaxation massage and sports massage", "Mozartlaan 25, 1217 CM Hilversum", R.drawable.relaxation_hilversum));
-        locations.add(new Location("Relaxation", "Glamour Studio", "Hair Salon", "Grote Berg 31, 5611 KH Eindhoven"));
-        locations.add(new Location("Relaxation", "Agua - Spa, Health & Beauty", "Spa and Health Club", "Wilhelminaplein 17, 5611 HG Eindoven", R.drawable.relaxation_aqua));
+        locations.add(new Location(type, r.getString(R.string.berlage_title), r.getString(R.string.berlage_description), r.getString(R.string.berlage_location), R.drawable.restaurant_berlage));
+        locations.add(new Location(type, r.getString(R.string.wiesen_title), r.getString(R.string.wiesen_description), r.getString(R.string.wiesen_location)));
+        locations.add(new Location(type, r.getString(R.string.lithos_title), r.getString(R.string.lithos_description), r.getString(R.string.lithos_location), R.drawable.restaurant_lithos));
+        locations.add(new Location(type, r.getString(R.string.zarzo_title), r.getString(R.string.zarzo_description), r.getString(R.string.zarzo_location)));
 
-        locations.add(new Location("Mall", "Piazza", "The Piazza shopping mall in the centre of Eindhoven", "5611 AE Eindhoven", R.drawable.mall_piazza));
-        locations.add(new Location("Mall", "Admirant Shopping", "The Admirant shopping mall in the centre of Eindhoven", "Nieuwe Emmasingel 54, 5611 AM Eindhoven"));
-        locations.add(new Location("Mall", "Heuvel Eindhoven Mall", "The Heuvel Eindhoven shopping mall in the centre of Eindhoven", "Heuvel Galerie 241, 5611 DK Eindhoven", R.drawable.mall_heuvel));
-        locations.add(new Location("Mall", "Eindhoven Parkhaus", "The Eindhoven Parkhaus shopping mall in the centre of Eindhoven", "31153, AZ, Emmasingel, 5611 AM Eindhoven"));
+        type = r.getString(R.string.relaxation);
+
+        locations.add(new Location(type, r.getString(R.string.nada_title), r.getString(R.string.nada_description), r.getString(R.string.nada_location)));
+        locations.add(new Location(type, r.getString(R.string.hilversum_title), r.getString(R.string.hilversum_description), r.getString(R.string.hilversum_location), R.drawable.relaxation_hilversum));
+        locations.add(new Location(type, r.getString(R.string.glamour_title), r.getString(R.string.glamour_description), r.getString(R.string.glamour_location)));
+        locations.add(new Location(type, r.getString(R.string.aqua_title), r.getString(R.string.aqua_description), r.getString(R.string.aqua_location), R.drawable.relaxation_aqua));
+
+        type = r.getString(R.string.mall);
+
+        locations.add(new Location(type, r.getString(R.string.piazza_title), r.getString(R.string.piazza_description), r.getString(R.string.piazza_location), R.drawable.mall_piazza));
+        locations.add(new Location(type, r.getString(R.string.admirant_title), r.getString(R.string.admirant_description), r.getString(R.string.admirant_location)));
+        locations.add(new Location(type, r.getString(R.string.heuvel_title), r.getString(R.string.heuvel_description), r.getString(R.string.heuvel_location), R.drawable.mall_heuvel));
+        locations.add(new Location(type, r.getString(R.string.parkhaus_title), r.getString(R.string.parkhaus_description), r.getString(R.string.parkhaus_location)));
 
         return locations;
     }
 
-    public class Location{
+    public class Location {
 
         private String mType;
         private String mTitle;
@@ -78,7 +73,7 @@ public class Library {
             this.mLocation = location;
         }
 
-        public String getType(){
+        public String getType() {
             return mType;
         }
 
@@ -98,4 +93,5 @@ public class Library {
             return mImageResource;
         }
     }
+
 }
