@@ -1,7 +1,5 @@
 <resources>
     <string name="app_name">TourGuide</string>
-
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="image">Image</string>
 
     <string name="museum">Museum</string>
