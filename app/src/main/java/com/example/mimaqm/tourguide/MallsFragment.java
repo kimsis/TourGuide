@@ -25,7 +25,6 @@ public class MallsFragment extends Fragment {
     ListView listView;
 
     public MallsFragment() {
-        // Required empty public constructor
     }
 
 

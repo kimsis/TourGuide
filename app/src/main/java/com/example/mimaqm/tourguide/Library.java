@@ -1,7 +1,8 @@
 package com.example.mimaqm.tourguide;
 
+import android.content.Context;
+
 import java.util.ArrayList;
-import java.util.logging.StreamHandler;
 
 public class Library {
 

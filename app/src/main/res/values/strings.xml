@@ -10,5 +10,13 @@
     <string name="symbol">\p{Z}</string>
     <string name="plus">+</string>
 
+    <string-array name="array_of_tabs">
+        <item>Museumms</item>
+        <item>Restaurants</item>
+        <item>Relaxations</item>
+        <item>Malls</item>
+    </string-array>
+
+
 
 </resources>
